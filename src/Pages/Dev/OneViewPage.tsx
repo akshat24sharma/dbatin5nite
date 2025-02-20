@@ -31,7 +31,7 @@ import {
   TRANSACTION_CREDIT_CARDS
 } from '~/src/Constants/OneView/OneView_TransactionsData'
 
-const HomePage: FC = () => {
+const OneViewPage: FC = () => {
   const [tabValue, setTabValue] = useState<number>(0)
   return (
     <DsStack
@@ -49,6 +49,7 @@ const HomePage: FC = () => {
           <DsRemixIcon className='ri-notification-2-line' />,
           <DsRemixIcon className='ri-search-line' />
         ]}
+        sx={{ boxShadow: 'none' }}
         color='default'
       />
 
@@ -300,4 +301,4 @@ const HomePage: FC = () => {
   )
 }
 
-export default HomePage
+export default OneViewPage
