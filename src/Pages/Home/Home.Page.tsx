@@ -35,7 +35,7 @@ import OneViewPage from '../Dev/OneViewPage'
 
 const HomePage: FC = () => {
   const [tabValue, setTabValue] = useState<number>(0)
-  return <OneViewPage />
+  return <InvestmentsPage />
 }
 
 export default HomePage

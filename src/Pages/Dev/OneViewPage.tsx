@@ -235,6 +235,38 @@ const OneViewPage: FC = () => {
             gridTemplateColumns: '1fr 1fr 1fr 1fr'
           }}
         >
+          <DsStack
+            justifyContent='center'
+            alignItems='center'
+            textAlign='center'
+            gap='var(--ds-spacing-glacial)'
+          >
+            <DsBox
+              sx={{
+                p: 'var(--ds-spacing-cool)',
+                border: '1px dashed var(--ds-colour-strokeDefault)',
+                borderRadius: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <DsRemixIcon
+                sx={{
+                  color: 'var(--ds-colour-actionSecondary)',
+                  fontSize: '24px'
+                }}
+                className='ri-add-line'
+              />
+            </DsBox>
+            <DsTypography
+              color='var(--ds-colour-actionSecondary)'
+              variant='supportRegularInfo'
+            >
+              Add item
+            </DsTypography>
+          </DsStack>
+
           {OneViewSendMoneyData.map((item, index) => (
             <DsBox key={index}>
               <OneViewSendMoneyItem label={item.label} name={item.name} />

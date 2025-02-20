@@ -155,6 +155,37 @@ export const InvestmentsPage = () => {
                 />
               </DsBox>
             ))}
+            <DsStack
+              justifyContent='flex-start'
+              alignItems='center'
+              textAlign='center'
+              gap='var(--ds-spacing-glacial)'
+            >
+              <DsBox
+                sx={{
+                  p: 'var(--ds-spacing-frostbite)',
+                  border: '1px dashed var(--ds-colour-strokeDefault)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center'
+                }}
+              >
+                <DsRemixIcon
+                  sx={{
+                    color: 'var(--ds-colour-actionSecondary)',
+                    fontSize: '24px'
+                  }}
+                  className='ri-arrow-down-s-line'
+                />
+              </DsBox>
+              <DsTypography
+                color='var(--ds-colour-actionSecondary)'
+                variant='supportRegularInfo'
+              >
+                MORE
+              </DsTypography>
+            </DsStack>
           </DsBox>
         </DsStack>
 

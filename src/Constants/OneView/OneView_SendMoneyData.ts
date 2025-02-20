@@ -10,9 +10,5 @@ export const OneViewSendMoneyData = [
   {
     name: 'LN',
     label: 'Lavish Naman'
-  },
-  {
-    name: 'GP',
-    label: 'Ganesh Pal'
   }
 ]
