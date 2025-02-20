@@ -279,7 +279,8 @@ export const InvestmentsPage = () => {
           <DsBox>
             <DsImage
               loading='lazy'
-              //   aspectRatio={1.2 / 1}
+              // height="200px"
+              width='370px'
               style={{
                 borderRadius: '16px 16px 0px 0px',
                 marginBottom: 'var(--ds-spacing-bitterCold)'
