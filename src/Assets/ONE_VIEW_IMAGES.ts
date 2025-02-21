@@ -16,6 +16,51 @@ const ONE_VIEW_BANNER_1_IMAGE = [
   }
 ]
 
+const ONE_VIEW_BANNER_3_IMAGE = [
+  {
+    src: new URL('~/src/AssetFiles/oneViewBanner1.png?as=avif', import.meta.url)
+      .href,
+    alt: 'oneViewBanner1 Image',
+    as: 'image/avif'
+  },
+  {
+    src: new URL('~/src/AssetFiles/oneViewBanner1.png?as=webp', import.meta.url)
+      .href,
+    alt: 'oneViewBanner1 Image',
+    as: 'image/webp'
+  },
+  {
+    src: new URL('~/src/AssetFiles/oneViewBanner1.png', import.meta.url).href,
+    alt: 'oneViewBanner1 Image',
+    as: 'image/png'
+  }
+]
+
+const ONE_VIEW_BANNER_4_IMAGE = [
+  {
+    src: new URL(
+      '~/src/AssetFiles/oneViewJustForYou.png?as=avif',
+      import.meta.url
+    ).href,
+    alt: 'oneViewJustForYou Image',
+    as: 'image/avif'
+  },
+  {
+    src: new URL(
+      '~/src/AssetFiles/oneViewJustForYou.png?as=webp',
+      import.meta.url
+    ).href,
+    alt: 'oneViewJustForYou Image',
+    as: 'image/webp'
+  },
+  {
+    src: new URL('~/src/AssetFiles/oneViewJustForYou.png', import.meta.url)
+      .href,
+    alt: 'oneViewJustForYou Image',
+    as: 'image/png'
+  }
+]
+
 const ONE_VIEW_BANNER_2_IMAGE = [
   {
     src: new URL('~/src/AssetFiles/banner2.png?as=avif', import.meta.url).href,
@@ -115,6 +160,8 @@ const ONE_VIEW_SEND_3_IMAGE = [
 export {
   ONE_VIEW_BANNER_1_IMAGE,
   ONE_VIEW_BANNER_2_IMAGE,
+  ONE_VIEW_BANNER_3_IMAGE,
+  ONE_VIEW_BANNER_4_IMAGE,
   ONE_VIEW_CAROUSEL_1_IMAGE,
   ONE_VIEW_SEND_1_IMAGE,
   ONE_VIEW_SEND_2_IMAGE,

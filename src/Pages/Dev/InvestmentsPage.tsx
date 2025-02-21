@@ -11,11 +11,11 @@ import {
   INVESTMENT_CREDIT_IMAGES,
   INVESTMENT_PROTECTION_IMAGES
 } from '~/src/Assets/INVESTMENTS_IMAGES'
-import { Investment_ChartLegends } from '~/src/Components/Investments/Investment_ChartLegends'
-import Investment_SectionHeader from '~/src/Components/Investments/Investment_SectionHeader'
-import { Investments_InvestmentItem } from '~/src/Components/Investments/Investments_InvestmentItesm'
 import { Investment_InvestmentItemsData } from '~/src/Constants/Investments/Investments_InvestmentsItemsData'
 import { Inevestment_PieData } from '~/src/Constants/Investments/Investments_PieData'
+import { Investment_ChartLegends } from '~/src/Lib/Investment_ChartLegends'
+import Investment_SectionHeader from '~/src/Lib/Investment_SectionHeader'
+import { Investments_InvestmentItem } from '~/src/Lib/Investments_InvestmentItesm'
 
 export const InvestmentsPage = () => {
   return (
@@ -279,9 +279,11 @@ export const InvestmentsPage = () => {
           <DsBox>
             <DsImage
               loading='lazy'
-              // height="200px"
-              width='370px'
+              height='287'
+              width='328'
               style={{
+                width: '100%',
+                height: '100%',
                 borderRadius: '16px 16px 0px 0px',
                 marginBottom: 'var(--ds-spacing-bitterCold)'
               }}
@@ -320,10 +322,13 @@ export const InvestmentsPage = () => {
         >
           <DsBox>
             <DsImage
+              width='328'
+              height='188'
               loading='lazy'
               style={{
                 borderRadius: '16px 16px 0px 0px',
-                width: '100%'
+                width: '100%',
+                height: '100%'
               }}
               srcSet={INVESTMENT_PROTECTION_IMAGES}
             />

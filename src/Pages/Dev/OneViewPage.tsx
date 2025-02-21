@@ -15,14 +15,10 @@ import {
 } from '@am92/react-design-system'
 import { FC, useState } from 'react'
 import {
-  ONE_VIEW_BANNER_1_IMAGE,
   ONE_VIEW_BANNER_2_IMAGE,
+  ONE_VIEW_BANNER_3_IMAGE,
   ONE_VIEW_CAROUSEL_1_IMAGE
 } from '~/src/Assets/ONE_VIEW_IMAGES'
-import { QuickLinksItem } from '~/src/Components/OneView/OneView_QuickLinksItem'
-import SelectionBox from '~/src/Components/OneView/OneView_SelectionBox'
-import { OneViewSendMoneyItem } from '~/src/Components/OneView/OneView_SendMoneyItem'
-import { TabListItem } from '~/src/Components/OneView/TransactionTabs/OneView_TabListItem'
 import { TabPanel } from '~/src/Components/TabPanel'
 import { QUICK_LINKS_DATA } from '~/src/Constants/OneView/OneView_OneViewQuickLinksData'
 import { OneViewSendMoneyData } from '~/src/Constants/OneView/OneView_SendMoneyData'
@@ -30,6 +26,10 @@ import {
   TRANSACTIONS_SAVINGS_ACCOUNT,
   TRANSACTION_CREDIT_CARDS
 } from '~/src/Constants/OneView/OneView_TransactionsData'
+import { QuickLinksItem } from '~/src/Lib/OneView_QuickLinksItem'
+import SelectionBox from '~/src/Lib/OneView_SelectionBox'
+import { OneViewSendMoneyItem } from '~/src/Lib/OneView_SendMoneyItem'
+import { TabListItem } from '~/src/Lib/OneView_TabListItem'
 
 const OneViewPage: FC = () => {
   const [tabValue, setTabValue] = useState<number>(0)
@@ -90,9 +90,9 @@ const OneViewPage: FC = () => {
         </DsStack>
       </DsStack>
 
-      {/* Offers Section (carousel) */}
+      {/* Just for you section  */}
 
-      <DsStack gap='12px'>
+      <DsBox>
         <DsStack
           alignItems='center'
           flexDirection='row'
@@ -101,24 +101,17 @@ const OneViewPage: FC = () => {
           px='var(--ds-spacing-bitterCold)'
         >
           <DsTypography variant='subheadingSemiboldDefault'>
-            Offers for you
+            Just for you
           </DsTypography>
         </DsStack>
-        <DsCarousel pagination={{ mode: 'external' }} navigation={false}>
-          <DsBox>
-            <DsImage
-              style={{ width: '100%' }}
-              srcSet={ONE_VIEW_BANNER_1_IMAGE}
-            />
-          </DsBox>
-          <DsBox>
-            <DsImage
-              style={{ width: '100%' }}
-              srcSet={ONE_VIEW_BANNER_2_IMAGE}
-            />
-          </DsBox>
-        </DsCarousel>
-      </DsStack>
+        <DsImage
+          width='312'
+          height='164'
+          style={{ height: '100%', width: '100%' }}
+          // loading="lazy"
+          srcSet={ONE_VIEW_BANNER_2_IMAGE}
+        />
+      </DsBox>
 
       {/* Transaction section */}
 
@@ -294,11 +287,49 @@ const OneViewPage: FC = () => {
         </DsStack>
         <DsBox>
           <DsImage
+            height='144'
+            width='288'
             loading='lazy'
-            aspectRatio={3 / 1}
-            srcSet={ONE_VIEW_CAROUSEL_1_IMAGE}
+            style={{ width: '100%', height: '100%' }}
+            srcSet={ONE_VIEW_BANNER_3_IMAGE}
           />
         </DsBox>
+      </DsStack>
+
+      {/* Offers Section (carousel) */}
+
+      <DsStack gap='12px'>
+        <DsStack
+          alignItems='center'
+          flexDirection='row'
+          justifyContent='space-between'
+          pb='var(--ds-spacing-bitterCold)'
+          px='var(--ds-spacing-bitterCold)'
+        >
+          <DsTypography variant='subheadingSemiboldDefault'>
+            Offers for you
+          </DsTypography>
+        </DsStack>
+        <DsCarousel pagination={{ mode: 'external' }} navigation={false}>
+          <DsBox>
+            <DsImage
+              height='112'
+              width='328'
+              loading='lazy'
+              style={{ width: '100%', height: '100%' }}
+              srcSet={ONE_VIEW_CAROUSEL_1_IMAGE}
+            />
+          </DsBox>
+          <DsBox>
+            <DsImage
+              height='112'
+              width='328'
+              loading='lazy'
+              style={{ width: '100%', height: '100%' }}
+              srcSet={ONE_VIEW_CAROUSEL_1_IMAGE}
+            />
+          </DsBox>
+        </DsCarousel>
       </DsStack>
 
       {/* Bottom Navigation section */}

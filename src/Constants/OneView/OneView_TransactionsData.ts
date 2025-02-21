@@ -2,7 +2,7 @@ export const TRANSACTIONS_SAVINGS_ACCOUNT = [
   {
     date1: '4',
     date2: 'Jan',
-    heading: 'Amazon',
+    heading: 'UPI/P2M/54070123...',
     subHeading: 'INFO',
     price: '₹35,000',
     debit: true
@@ -10,7 +10,7 @@ export const TRANSACTIONS_SAVINGS_ACCOUNT = [
   {
     date1: '2',
     date2: 'Jan',
-    heading: 'Amazon',
+    heading: 'NEFT/KKBKH250392..',
     subHeading: 'INFO',
     price: '₹12,000',
     debit: true
