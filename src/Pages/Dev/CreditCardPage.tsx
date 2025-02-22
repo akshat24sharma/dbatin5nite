@@ -31,9 +31,11 @@ const CreditCardPage = () => {
       >
         <DsBox sx={{ height: '385px', width: '100%' }}>
           <DsImage
+            rel='preload'
             height='385'
             width='360'
-            loading='lazy'
+            // loading="eager"
+            fetchPriority='high'
             style={{ width: '100%', height: 'auto' }}
             srcSet={CREDIT_CARD_MAIN_BANNER_IMAGE}
           />

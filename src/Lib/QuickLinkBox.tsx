@@ -15,7 +15,7 @@ interface I_SELECTION_BOX {
   amount: string
 }
 
-const SelectionBox = (props: I_SELECTION_BOX) => {
+const QuickLinkBox = (props: I_SELECTION_BOX) => {
   const {
     backgroundColor,
     headerIcon,
@@ -62,4 +62,4 @@ const SelectionBox = (props: I_SELECTION_BOX) => {
   )
 }
 
-export default SelectionBox
+export default QuickLinkBox

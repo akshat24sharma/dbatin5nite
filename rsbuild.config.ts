@@ -94,7 +94,7 @@ Please Node: if you are running script for the first time, you may need to creat
     output: {
       cleanDistPath: isProduction,
       legalComments: 'none',
-      polyfill: isProduction ? 'usage' : 'off',
+      polyfill: isProduction ? 'off' : 'off',
       sourceMap: {
         js: isProduction
           ? // Use a high quality source map format for production

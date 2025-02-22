@@ -38,10 +38,34 @@ const LendingPage = () => {
 
       {/* Banner section  */}
 
-      <DsBox>
+      <DsBox sx={{ display: 'flex' }}>
+        <DsStack
+          sx={{
+            px: 'var(--ds-spacing-bitterCold)',
+            py: 'var(--ds-spacing-mild)',
+            width: '100%'
+          }}
+        >
+          <DsStack gap='6px'>
+            <DsTypography variant='bodyRegularMedium'>
+              Hi Harsh, Just for you!
+            </DsTypography>
+            <DsTypography variant='bodyBoldMedium'>
+              Pre-Qualified Loan offer of
+            </DsTypography>
+            <DsTypography variant='headingBoldExtraLarge'>
+              ₹4,00,000
+            </DsTypography>
+            <DsTypography>@ 16.5% p.a.</DsTypography>
+            <DsTypography></DsTypography>
+          </DsStack>
+        </DsStack>
         <DsImage
-          width='360'
-          height='252'
+          width='251'
+          height='227'
+          rel='preload'
+          // loading="eager"
+          fetchPriority='high'
           style={{ width: '100%', height: '100%' }}
           srcSet={LENDING_BANNER_IMAGE}
         />

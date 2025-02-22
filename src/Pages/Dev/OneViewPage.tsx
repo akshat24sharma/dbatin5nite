@@ -15,21 +15,17 @@ import {
 } from '@am92/react-design-system'
 import { FC, useState } from 'react'
 import {
-  ONE_VIEW_BANNER_2_IMAGE,
   ONE_VIEW_BANNER_3_IMAGE,
   ONE_VIEW_CAROUSEL_1_IMAGE
 } from '~/src/Assets/ONE_VIEW_IMAGES'
 import { TabPanel } from '~/src/Components/TabPanel'
-import { QUICK_LINKS_DATA } from '~/src/Constants/OneView/OneView_OneViewQuickLinksData'
 import { OneViewSendMoneyData } from '~/src/Constants/OneView/OneView_SendMoneyData'
 import {
   TRANSACTIONS_SAVINGS_ACCOUNT,
   TRANSACTION_CREDIT_CARDS
 } from '~/src/Constants/OneView/OneView_TransactionsData'
-import { QuickLinksItem } from '~/src/Lib/OneView_QuickLinksItem'
-import SelectionBox from '~/src/Lib/OneView_SelectionBox'
-import { OneViewSendMoneyItem } from '~/src/Lib/OneView_SendMoneyItem'
-import { TabListItem } from '~/src/Lib/OneView_TabListItem'
+import SelectionBox from '~/src/Lib/QuickLinkBox'
+import { TabListItem } from '~/src/Lib/TabListItem'
 
 const OneViewPage: FC = () => {
   const [tabValue, setTabValue] = useState<number>(0)
@@ -92,26 +88,26 @@ const OneViewPage: FC = () => {
 
       {/* Just for you section  */}
 
-      <DsBox>
+      {/* <DsBox>
         <DsStack
-          alignItems='center'
-          flexDirection='row'
-          justifyContent='space-between'
-          pb='var(--ds-spacing-bitterCold)'
-          px='var(--ds-spacing-bitterCold)'
+          alignItems="center"
+          flexDirection="row"
+          justifyContent="space-between"
+          pb="var(--ds-spacing-bitterCold)"
+          px="var(--ds-spacing-bitterCold)"
         >
-          <DsTypography variant='subheadingSemiboldDefault'>
+          <DsTypography variant="subheadingSemiboldDefault">
             Just for you
           </DsTypography>
         </DsStack>
         <DsImage
-          width='312'
-          height='164'
-          style={{ height: '100%', width: '100%' }}
-          // loading="lazy"
+          width="312"
+          height="164"
+          style={{ height: "100%", width: "100%" }}
+          loading="eager"
           srcSet={ONE_VIEW_BANNER_2_IMAGE}
         />
-      </DsBox>
+      </DsBox> */}
 
       {/* Transaction section */}
 
@@ -166,8 +162,8 @@ const OneViewPage: FC = () => {
         </DsBox>
       </DsStack>
 
-      {/* Quick links section */}
-
+      {/* Quick links section (removed) */}
+      {/* 
       <DsStack>
         <DsStack
           alignItems='center'
@@ -200,7 +196,7 @@ const OneViewPage: FC = () => {
             )
           })}
         </DsBox>
-      </DsStack>
+      </DsStack> */}
 
       {/* Send money section */}
 
@@ -262,7 +258,21 @@ const OneViewPage: FC = () => {
 
           {OneViewSendMoneyData.map((item, index) => (
             <DsBox key={index}>
-              <OneViewSendMoneyItem label={item.label} name={item.name} />
+              <DsBox key={index}>
+                <DsStack
+                  justifyContent='center'
+                  alignItems='center'
+                  textAlign='center'
+                  gap='var(--ds-spacing-glacial)'
+                >
+                  <DsAvatar ds-size='XXL' ds-variant='text'>
+                    {item.name}
+                  </DsAvatar>
+                  <DsTypography variant='supportRegularInfo'>
+                    {item.label}
+                  </DsTypography>
+                </DsStack>
+              </DsBox>
             </DsBox>
           ))}
         </DsBox>

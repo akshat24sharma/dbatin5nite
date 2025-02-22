@@ -13,9 +13,9 @@ import {
 } from '~/src/Assets/INVESTMENTS_IMAGES'
 import { Investment_InvestmentItemsData } from '~/src/Constants/Investments/Investments_InvestmentsItemsData'
 import { Inevestment_PieData } from '~/src/Constants/Investments/Investments_PieData'
-import { Investment_ChartLegends } from '~/src/Lib/Investment_ChartLegends'
-import Investment_SectionHeader from '~/src/Lib/Investment_SectionHeader'
+import { Investment_ChartLegends } from '~/src/Lib/ChartLegends'
 import { Investments_InvestmentItem } from '~/src/Lib/Investments_InvestmentItesm'
+import Investment_SectionHeader from '~/src/Lib/SectionHeader'
 
 export const InvestmentsPage = () => {
   return (
@@ -217,6 +217,9 @@ export const InvestmentsPage = () => {
                   ₹2,40,000
                 </DsTypography>
               </DsStack>
+
+              {/* chart section  */}
+
               <DsBox>
                 <DsPieChart
                   width={144}
@@ -239,6 +242,9 @@ export const InvestmentsPage = () => {
                 />
               </DsBox>
             </DsStack>
+
+            {/* legends section  */}
+
             <DsBox
               sx={{
                 display: 'grid',
