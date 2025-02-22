@@ -1,6 +1,9 @@
 import { FC } from 'react'
 
 import CreditCardPage from '../Dev/CreditCardPage'
+// import { ForexPage } from '../Dev/ForexPages'
+// import { InvestmentsPage } from '../Dev/InvestmentsPage'
+// import OneViewPage from '../Dev/OneViewPage'
 // import LendingPage from '../Dev/LendingPage'
 
 const HomePage: FC = () => {

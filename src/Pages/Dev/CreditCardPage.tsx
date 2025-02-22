@@ -9,7 +9,10 @@ import {
   DsStack,
   DsTypography
 } from '@am92/react-design-system'
-import { CREADIT_CARDCAROUSEL_1_IMAGE } from '~/src/Assets/CREDIT_CARD_IMAGES'
+import {
+  CREADIT_CARDCAROUSEL_1_IMAGE,
+  CREDIT_CARD_MAIN_BANNER_IMAGE
+} from '~/src/Assets/CREDIT_CARD_IMAGES'
 import CheckboxListItem from '~/src/Lib/CheckboxListItem'
 import { QuickInfoCards } from '~/src/Lib/QuickInfoCards'
 
@@ -22,34 +25,19 @@ const CreditCardPage = () => {
       }}
     >
       {/* Main banner  */}
+
       <DsBox
-        sx={{
-          backgroundImage: `background-image: url(${
-            new URL('~/src/AssetFiles/ccMainBanner.png', import.meta.url).href
-          });
-  background-image: -webkit-image-set(
-    url(${
-      new URL('~/src/AssetFiles/ccMainBanner.png', import.meta.url).href
-    }) 1x,
-    url("large-landscape-2048x1536.jpg") 2x);
-  background-image: image-set(
-    url(${
-      new URL('~/src/AssetFiles/ccMainBanner.png', import.meta.url).href
-    }) 1x,
-    url(${
-      new URL('~/src/AssetFiles/ccMainBanner.png', import.meta.url).href
-    }) 2x)`,
-          //   backgroundImage: `url(${
-          //     new URL("~/src/AssetFiles/ccMainBanner.png", import.meta.url).href
-          //   })`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% 250px',
-          height: '300px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'end'
-        }}
+        sx={{ position: 'relative', display: 'flex', justifyContent: 'center' }}
       >
+        <DsBox sx={{ height: '385px', width: '100%' }}>
+          <DsImage
+            height='385'
+            width='360'
+            loading='lazy'
+            style={{ width: '100%', height: 'auto' }}
+            srcSet={CREDIT_CARD_MAIN_BANNER_IMAGE}
+          />
+        </DsBox>
         <DsBox
           sx={{
             py: 'var(--ds-spacing-mild)',
@@ -58,10 +46,17 @@ const CreditCardPage = () => {
             mx: 'var(--ds-spacing-bitterCold)',
             borderRadius: 'var(--ds-radius-glacial)',
             display: 'flex',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            position: 'absolute',
+            bottom: '0px'
           }}
         >
-          <DsBox sx={{ display: 'flex', gap: 'var(--ds-spacing-bitterCold)' }}>
+          <DsBox
+            sx={{
+              display: 'flex',
+              gap: 'var(--ds-spacing-bitterCold)'
+            }}
+          >
             <DsBox
               sx={{
                 p: 'var(--ds-spacing-glacial)',
