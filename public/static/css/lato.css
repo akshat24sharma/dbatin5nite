@@ -1,0 +1,58 @@
+/* Webfont: Lato-Bold */
+@font-face {
+  font-family: "Lato";
+  src: url("/static/fonts/Lato-Bold.woff2") format("woff2"), /* Modern Browsers */
+    url("/static/fonts/Lato-Bold.woff") format("woff"), /* Modern Browsers */
+    url("/static/fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+/* Webfont: Lato-BoldItalic */
+@font-face {
+  font-family: "Lato";
+  src: url("/static/fonts/Lato-BoldItalic.woff2") format("woff2"), /* Modern Browsers */
+    url("/static/fonts/Lato-BoldItalic.woff") format("woff"), /* Modern Browsers */
+    url("/static/fonts/Lato-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+/* Webfont: Lato-Semibold */
+@font-face {
+  font-family: "Lato";
+  src: url("/static/fonts/Lato-Semibold.woff2") format("woff2"), /* Modern Browsers */
+    url("/static/fonts/Lato-Semibold.woff") format("woff"), /* Modern Browsers */
+    url("/static/fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+/* Webfont: Lato-Regular */
+@font-face {
+  font-family: "Lato";
+  src: url("/static/fonts/Lato-Regular.woff2") format("woff2"), /* Modern Browsers */
+    url("/static/fonts/Lato-Regular.woff") format("woff"), /* Modern Browsers */
+    url("/static/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+/* Webfont: Lato-Light */
+@font-face {
+  font-family: "Lato";
+  src: url("/static/fonts/Lato-Light.woff2") format("woff2"), /* Modern Browsers */
+    url("/static/fonts/Lato-Light.woff") format("woff"), /* Modern Browsers */
+    url("/static/fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}

@@ -14,7 +14,8 @@ import {
 import { useState } from 'react'
 import {
   LENDING_BANNER_2_IMAGE,
-  LENDING_BANNER_IMAGE
+  LENDING_BANNER_IMAGE,
+  LENDING_HADER_IMAGE
 } from '~/src/Assets/LENDING_IMAGES'
 import { BannerPercentInfoCard } from '~/src/Lib/BannerInfoCard'
 
@@ -25,14 +26,16 @@ const LendingPage = () => {
       {/* HEader section  */}
 
       <DsHeader
-        sx={{
-          '* > img': {
-            width: '100%',
-            height: '100%'
-          }
-        }}
-        logoUrl={
-          new URL('~/src/AssetFiles/lendingHeader2.png', import.meta.url).href
+        logo={
+          <DsBox sx={{ width: '100%', height: '100%' }}>
+            <DsImage
+              height='44'
+              width='320'
+              style={{ width: 'auto', height: 'auto' }}
+              srcSet={LENDING_HADER_IMAGE}
+            />
+          </DsBox>
+          // new URL("~/src/AssetFiles/lendingHeader2x.png", import.meta.url).href
         }
       />
 

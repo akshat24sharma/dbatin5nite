@@ -20,20 +20,20 @@ const CREADIT_CARDCAROUSEL_1_IMAGE = [
 
 const CREDIT_CARD_MAIN_BANNER_IMAGE = [
   {
-    src: new URL('~/src/AssetFiles/ccMainBanner.png?as=avif', import.meta.url)
+    src: new URL('~/src/AssetFiles/ccMainBanner2x.png?as=avif', import.meta.url)
       .href,
-    alt: 'ccMainBanner Image',
+    alt: 'ccMainBanner2x Image',
     as: 'image/avif'
   },
   {
-    src: new URL('~/src/AssetFiles/ccMainBanner.png?as=webp', import.meta.url)
+    src: new URL('~/src/AssetFiles/ccMainBanner2x.png?as=webp', import.meta.url)
       .href,
-    alt: 'ccMainBanner Image',
+    alt: 'ccMainBanner2x Image',
     as: 'image/webp'
   },
   {
-    src: new URL('~/src/AssetFiles/ccMainBanner.png', import.meta.url).href,
-    alt: 'ccMainBanner Image',
+    src: new URL('~/src/AssetFiles/ccMainBanner2x.png', import.meta.url).href,
+    alt: 'ccMainBanner2x Image',
     as: 'image/png'
   }
 ]

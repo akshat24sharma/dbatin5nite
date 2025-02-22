@@ -22,6 +22,30 @@ const LENDING_BANNER_IMAGE = [
   }
 ]
 
+const LENDING_HADER_IMAGE = [
+  {
+    src: new URL(
+      '~/src/AssetFiles/lendingHeader2x.png?as=avif',
+      import.meta.url
+    ).href,
+    alt: 'lendingHeader2x Image',
+    as: 'image/avif'
+  },
+  {
+    src: new URL(
+      '~/src/AssetFiles/lendingHeader2x.png?as=webp',
+      import.meta.url
+    ).href,
+    alt: 'lendingHeader2x Image',
+    as: 'image/webp'
+  },
+  {
+    src: new URL('~/src/AssetFiles/lendingHeader2x.png', import.meta.url).href,
+    alt: 'lendingHeader2x Image',
+    as: 'image/png'
+  }
+]
+
 const LENDING_BANNER_EXP_IMAGE = [
   {
     src: new URL('~/public/images/lendingBanner15.png?as=avif', import.meta.url)
@@ -65,5 +89,6 @@ const LENDING_BANNER_2_IMAGE = [
 export {
   LENDING_BANNER_IMAGE,
   LENDING_BANNER_2_IMAGE,
-  LENDING_BANNER_EXP_IMAGE
+  LENDING_BANNER_EXP_IMAGE,
+  LENDING_HADER_IMAGE
 }

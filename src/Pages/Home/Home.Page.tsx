@@ -2,7 +2,7 @@ import {
   FC
   // useState
 } from 'react'
-import CreditCardPage from '../Dev/CreditCardPage'
+import LendingPage from '../Dev/LendingPage'
 
 // import CreditCardPage from '../Dev/CreditCardPage'
 // import { ForexPage } from '../Dev/ForexPages'
@@ -13,7 +13,7 @@ import CreditCardPage from '../Dev/CreditCardPage'
 const HomePage: FC = () => {
   // const [tabValue, setTabValue] = useState<number>(0)
   // const [openBottomSheet, setOpenBottomSheet] = useState(false)
-  return <CreditCardPage />
+  return <LendingPage />
 }
 
 export default HomePage
