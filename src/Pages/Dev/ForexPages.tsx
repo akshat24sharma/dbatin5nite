@@ -346,6 +346,7 @@ export const ForexPage = () => {
                 name='Buy button'
                 fullWidth
                 size='medium'
+                color='success'
                 // disabled={item !== "Forward"}
                 endIcon={<DsRemixIcon className='ri-arrow-right-down-line' />}
               >

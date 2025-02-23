@@ -24,7 +24,7 @@ import {
   TRANSACTIONS_SAVINGS_ACCOUNT,
   TRANSACTION_CREDIT_CARDS
 } from '~/src/Constants/OneView/OneView_TransactionsData'
-import SelectionBox from '~/src/Lib/QuickLinkBox'
+import QuickLinkBox from '~/src/Lib/QuickLinkBox'
 import { TabListItem } from '~/src/Lib/TabListItem'
 
 const OneViewPage: FC = () => {
@@ -67,7 +67,7 @@ const OneViewPage: FC = () => {
           flexDirection='row'
           gap='var(--ds-spacing-frostbite)'
         >
-          <SelectionBox
+          <QuickLinkBox
             amount='2.36 Cr'
             subHeadingLabel='Total value'
             subHeadingIcon='ri-eye-line'
@@ -75,7 +75,7 @@ const OneViewPage: FC = () => {
             headerIcon='ri-bank-line'
             headerLabel='One View'
           />
-          <SelectionBox
+          <QuickLinkBox
             amount='42,40,400.45'
             subHeadingLabel='Axis account balance'
             subHeadingIcon='ri-eye-line'
